@@ -1,4 +1,5 @@
 # bot.py
+# This file contains the code to run the bot and turn it online
 # This file is intended to be a "getting started" code example for students.
 # The code in this file is fully functional.
 # Students are free to edit the code in the milestone 3 folder.
