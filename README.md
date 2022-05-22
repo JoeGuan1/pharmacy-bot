@@ -3,7 +3,7 @@ This bot is built to run commands that are based off of businesses rules for a p
 
 Business Rules and Bot Commands:
 
- 1. For each supplier, find the number of medication files they are linked with
+1. For each supplier, find the number of medication files they are linked with
 
  Command: $supplycheck
 
@@ -13,74 +13,77 @@ Business Rules and Bot Commands:
 
  Command: $medicationcontact
 
-Prints each medication file's name and it's supplier's name and contact number
+ Prints each medication file's name and it's supplier's name and contact number
 
 3. For each medical insurance, list all the patients that have that insurance
 
  Command: $insurance <insurance name>
 
-Prints the name of the insurance entered and lists all the patients who have this insurance
-e.g: $insurance Medi-One
+ Prints the name of the insurance entered and lists all the patients who have this insurance
+ e.g: $insurance Medi-One
 
 4. Find the number of medical insurance in the same region
 
  Command: $insuranceperregion
  
-Prints the name of each region and the number of insurances that are within that region
+ Prints the name of each region and the number of insurances that are within that region
 
 5. List all of the doctors from employees
 
-Command: $doctors
+ Command: $doctors
  
-Prints the name of each doctor from the employee's list
+ Prints the name of each doctor from the employee's list
 
 6. For each medication file in inventory, list the total stock of each medication file
 
  Command: $inventorystock
 
-Prints the name of each medication file and it's total stock from the inventory's list
+ Prints the name of each medication file and it's total stock from the inventory's list
 
 7. For each medication file in inventory, list each medication file that has a higher total stock than the number entered.
 
  Command: $inventorystock <number>
 
- Prints the name of each medication file and it's total stock from the inventory's list that's higher than the number entered (meaning entering 50 prints all medication file name whose total stock is 51 or higher)
-e.g: $inventorystock 50
+ Prints the name of each medication file and it's total stock from the inventory's list that's higher than the number entered (meaning entering 50 prints
+ all medication file name whose total stock is 51 or higher)
+ e.g: $inventorystock 50
 
 8. Find the number of patients who have a specific payment method
 
  Command: $patientpayment <payment_type>
 
  Prints the payment type entered and the number of patients who has this payment type (Only supported payment type are Paypal and Bank_Account)
-e.g: $patientpayment Bank_Account
+ e.g: $patientpayment Bank_Account
 
 9. For each payment method, find the average of patients with that payment
 
  Command:$averagepayment <payment_type>
 
  Prints the payment type entered and the average number of patients who has this payment type (Only supported payment type are Paypal and Bank_Account)
-e.g: $averagepayment Bank Account
+ e.g: $averagepayment Bank Account
 
 10. Find the number of patients who have a certain medication name listed in their medication plan
 
  Command: $patientmedication <medication_name>
 
  Prints the medication name entered and the number of patients who have that medication name in their medication plan
-e.g: $patientmedication Atorvastatin
+ e.g: $patientmedication Atorvastatin
 
 11. Find the number of medication plans that list a certain medication name
 
  Command: $planfile <medication_name>
 
  Prints the medication name entered and the number of medication plans who use the medication
-e.g: $planfile Metformin
+ e.g: $planfile Metformin
 
 12. Update the inventory table automatically with a new medication file whenever a medication file is inserted.
 
  Command: $insertmedication <medication_name> <supply_id>
 
- Takes the medication name and supply id and inserts it into the medication_file table. Then the medication name is inserted into the inventory table with a total stock of 0 and prints out the medication name and total stock that was just inserted into memory (if the supplier id does not exist with the supplier table, then the command won't do anything)
-e.g: $insertmedication Amlodipine 4
+ Takes the medication name and supply id and inserts it into the medication_file table. Then the medication name is inserted into the inventory table with 
+ a total stock of 0 and prints out the medication name and total stock that was just inserted into memory (if the supplier id does not exist with the 
+ supplier table, then the command won't do anything)
+ e.g: $insertmedication Amlodipine 4
 
 13. For each clinic, find the number of patients.
 
@@ -93,7 +96,7 @@ e.g: $insertmedication Amlodipine 4
  Command: $plan <patient_SSN>
 
  Prints the entire medication plan of the patient's SSN that was entered
-e.g: $plan 328694302
+ e.g: $plan 328694302
 
 15. Find the number of patients that have an active medication plan
 
@@ -118,4 +121,3 @@ e.g: $plan 328694302
  Command: $doctorpatient
 
  Prints the name of each doctor and the names of the patients that are under each doctor 
-
