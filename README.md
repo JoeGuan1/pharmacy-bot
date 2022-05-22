@@ -3,7 +3,7 @@ This bot is built to run commands that are based off of businesses rules for a p
 
 Business Rules and Bot Commands:
 
-  1. For each supplier, find the number of medication files they are linked with
+1. For each supplier, find the number of medication files they are linked with
 
  Command: $supplycheck
 
