@@ -1,4 +1,5 @@
 # database.py
+# This files has the implemention of the bot commands and of the queries givens to the databse to run the commands.
 # Handles all the methods interacting with the database of the application.
 # Students must implement their own methods here to meet the project requirements.
 
